@@ -1,0 +1,153 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+@font-face {
+  font-family: 'Young Serif';
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/Outfit-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+
+
+body {
+    font-family: 'outfit', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+  max-width: calc(100% - 300px); /* 150px از هر طرف */
+  margin: 0 auto;                 /* وسط صفحه */
+  padding: 20px;                  /* فضای داخلی کانتینر */
+  box-sizing: border-box;         /* تضمین اینکه padding داخل عرض حساب بشه */
+}
+
+/* برای موبایل فاصله کمتر کنیم */
+@media (max-width: 700px) {
+  .container {
+    max-width: 100%;
+    padding: 20px 20px; /* فاصله کم‌تر برای موبایل */
+  }
+}
+
+
+h1, h2 {
+  font-family: 'Young Serif', serif;
+}
+
+h1 {
+    font-size: 36px;
+   
+}
+
+h2 {
+    font-size: 48px;
+    color: #864934;
+}
+
+@media (min-width: 768px) {
+  h1 { font-size: 36px; }
+  h2 { font-size: 32px; }
+}
+
+.prep-title {
+    font-size: 28px;
+    color: #6D3751;
+}
+
+p, th, td {
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  p, th, td {
+    font-size: 20px;
+  }
+}
+
+
+ul, ol {
+    font-size: 20px;
+    margin-left: 40px;
+    padding: 0;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  border-radius:25px;
+  -webkit-border-radius:25px;
+  -moz-border-radius:25px;
+  -ms-border-radius:25px;
+  -o-border-radius:25px;
+
+}
+
+.s2 {
+    background-color: #FFF7FC;
+    padding: 30px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul.costom-list1 li::marker {
+  color: #6D3751; /* فقط رنگ مربع/نقطه تغییر می‌کنه */
+}
+
+ul.costom-list2 li::marker {
+  color: #864934; /* فقط رنگ مربع/نقطه تغییر می‌کنه */
+}
+
+ol li::marker {
+    color: #864934;
+}
+
+table {
+
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+table tr {
+  border-bottom: 1px solid hsl(230, 8%, 90%);
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table th, table td {
+  text-align: left;
+  padding: 10px 40px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  table th, table td {
+    padding: 10px 40px;
+  }
+}
