@@ -28,17 +28,17 @@ body {
 }
 
 .container {
-  max-width: calc(100% - 300px); /* 150px از هر طرف */
-  margin: 0 auto;                 /* وسط صفحه */
-  padding: 20px;                  /* فضای داخلی کانتینر */
-  box-sizing: border-box;         /* تضمین اینکه padding داخل عرض حساب بشه */
+  max-width: calc(100% - 300px); 
+  margin: 0 auto;                
+  padding: 20px;                
+  box-sizing: border-box;        
 }
 
-/* برای موبایل فاصله کمتر کنیم */
+
 @media (max-width: 700px) {
   .container {
     max-width: 100%;
-    padding: 20px 20px; /* فاصله کم‌تر برای موبایل */
+    padding: 20px 20px; 
   }
 }
 
@@ -113,11 +113,11 @@ ul {
 }
 
 ul.costom-list1 li::marker {
-  color: #6D3751; /* فقط رنگ مربع/نقطه تغییر می‌کنه */
+  color: #6D3751; 
 }
 
 ul.costom-list2 li::marker {
-  color: #864934; /* فقط رنگ مربع/نقطه تغییر می‌کنه */
+  color: #864934;
 }
 
 ol li::marker {
